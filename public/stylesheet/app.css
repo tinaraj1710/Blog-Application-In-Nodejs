@@ -1,0 +1,106 @@
+ i.icon {
+     font-size: 2em;
+}
+
+.container.main {
+     margin-top: 7% ;
+     margin-bottom : 10px;
+     width : 50rem;
+     border : 1px solid blue;
+ }
+ 
+ .content {
+      margin-top:7px;
+ }
+
+.description{
+     margin-top: 8px;
+     margin-bottom: 8px;
+}
+
+.divided.items , .ui.form ,.ui.top.attached {
+  margin : 0px 0px;
+  padding-top :20px; 
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.ui.section.divider {
+    margin :0% 0%;
+}
+
+.extra {
+    margin-top : 0%;
+}
+
+.ui.section.divider {
+     margin:0px  0px ;
+     padding-left : 30px;
+     padding-right :30px;
+    }
+    
+    
+
+.ui.huge.header {
+     padding-top : 20px;
+     margin-bottom :0px;
+     padding-left:20px;
+     padding-right:20px;
+}
+
+#hederofshow {
+     padding-left :30px;
+}
+
+#mainhead {
+     width :70%;
+     height:250px;
+     margin-top:7%;
+     background-color:#eee;
+     margin-left:auto;
+     margin-right:auto;
+     padding-left:2.5%;
+     border-radius : 10px;
+     
+}
+
+h1 {
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     padding-top:30px;
+     padding-bottom: 0px;
+     font-size:50px; 
+     margin:2px;
+}
+
+#headp {
+     font-size : 20px;
+     text-transform: capitalize;
+     padding-right:50px;
+}
+
+#indexhead {
+     margin-top: 2% ;
+     margin-bottom : 10px;
+     width : 47rem;
+     border : 1px solid blue;
+ }
+ 
+ .fa-plus-circle , .fa-trash-alt , .fa-chevron-right , .fa-edit {
+     margin-left:5px;
+ }
+ 
+#extra {
+     margin-top:0px;
+}
+
+.fa-user-tag {
+     margin-right:3px;
+     color:#4583e8;
+}
+
+#showimage {
+     width:170px;
+     height:161px;
+     border-radius: 6px;
+}

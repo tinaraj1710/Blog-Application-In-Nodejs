@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<div class="ui main text container segement">
+    <center><div class="ui huge header">Create New Blog</div></center>
+     <form action="/blogs" method="post" class="ui form">
+           <div class="field">
+               <lable><h3>User Name</h3></lable>
+               <input type="text" name="blogs[username]" placeholder="Your Name">
+           </div>
+           <div class="field">
+             <lable><h3>Title</h3></lable>
+             <input type="text" name="blogs[title]" placeholder="Title Of Blog">
+           </div>
+           <div class="field">
+              <lable><h3>Image URL</h3></lable>
+               <input type="text" name="blogs[image]" placeholder="URL Of Image">
+           </div>
+           <div class="field">
+              <lable><h3>Information Details</h3></lable>
+               <input type="text" name="blogs[infolink]" placeholder="From Where You Get This Information eg: Website.">
+           </div>
+           <div class="field">
+                <lable><h3>Comments</h3></lable>
+                <textarea placeholder="Comments"  name="blogs[body]"></textarea>
+           </div>
+            <button type="submit" class="fluid ui primary big button">Add Post</button>
+            <h3><a href="/blogs">Go Back</a></h3>
+      </form>  
+</div>  
+
+<% include partials/footer %>

@@ -1,0 +1,43 @@
+<% include partials/header %>
+<div id="mainhead">
+     <h1><i class="fas fa-newspaper"></i> Welcome To Blogs Page </h1> 
+     <p id="headp">This is the blog page. where you can add posts , edit exsting blogs , delete any blogs and read any blogs that you want.</p>   
+      <p>
+           <a href="/blogs/new" class="ui primary button">Add Post <i class="fas fa-plus-circle"></i></a>
+      </p>
+</div>
+
+
+<div class="ui main text container" id="indexhead">
+<% blogs.forEach(function(blogs){ %>
+     <div class="ui divided items">
+        <div class="item">
+              <div class="image">
+                <img  id="showimage" src="<%= blogs.img %>">
+              </div>
+            <div class="content">
+                 <a href="/blogs/<%= blogs._id %>" class="header">
+                    <%= blogs.title %>
+                  </a>
+                <div class="meta">
+                    <span><%= blogs.created.toDateString() %></span>
+                </div>
+                <div class="description">
+                  <p><%- blogs.body.substring(0 , 85) %>..</p> 
+                </div>
+                <div class="extra" id="extra">
+                   <div class="ui label"><i class="fas fa-user-tag"></i> <%= blogs.username %></div>
+                   <a href="/blogs/<%= blogs._id %>" class="ui right floated primary tiny button">
+                      Read More
+                     <i class="fas fa-chevron-right"></i>
+                   </a>
+                </div>
+              </div>
+        </div>
+    <div class="ui section divider"></div>
+    </div>
+   
+ <% }); %>
+ </div>
+
+<% include partials/footer %>
