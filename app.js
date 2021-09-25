@@ -7,7 +7,15 @@ var app = express();
 
 
 // APP CONNECT CONFIG
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true  , useCreateIndex : true });
+mongoose.connect(process.env.DATABASEURL , { 
+    useNewUrlParser: true, 
+    useUnifiedTopology : true,
+    keepAlive : true 
+}).then(() => {
+    console.log("connected to DB")
+}).catch(err => {
+    console.log("Got Error ===> " , err.message);
+});
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -15,7 +23,7 @@ app.use(methodoverride("_method"));
 // MONGOOSE SCHEMA
 var blogSchema = new mongoose.Schema({
     username : "string",
-    title: "string",
+    title: "string", 
     img: "string",
     body: "string",
     infolink : "string",
