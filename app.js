@@ -32,17 +32,6 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-// Blog.create({
-//      title : "Test blog",
-//      img : "https://99firms.com/wp-content/uploads/2019/04/blogging-stats-featured.png",
-//      body : "this is the very useful blog."
-// } , function(err , blog){
-//      if(err){
-//           console.log("error in creating a blog");
-//      } else {
-//           console.log(blog);
-//      }
-// });
 
 // ROUTES
 app.get("/", function(req, res) {
